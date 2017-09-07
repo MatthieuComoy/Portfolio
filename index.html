@@ -2,8 +2,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
         <title>Matthieu Comoy | Portfolio</title>
         <meta name="description" content="Salut! Je suis un jeune infographiste et développeur web encore en formation se passionnant pour tout ce qui touche au web et au graphisme. Venez en apprendre plus sur moi!">
+        
         <link rel="icon" type="image/png" href="images/favicon.png" />
         <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -14,7 +16,6 @@
         
         <link rel="stylesheet" href="css/main.css">
         <script src="js/myscript.js"></script>
-        
         <script>
               (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -25,6 +26,23 @@
               ga('send', 'pageview');
 
         </script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
+        <script>
+	       $(document).ready(function() {
+		      $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			     var page = $(this).attr('href'); // Page cible
+			     var speed = 750; // Durée de l'animation (en ms)
+			     $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			     return false;
+		      });
+	       });
+        </script>
+        
     </head>
     <body>
      
@@ -43,9 +61,9 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li><a href="#photo">Photo</a></li>
-                    <li><a href="#dessin">Dessin</a></li>
-                    <li><a href="#blender">Infographie3D</a></li>
+                    <li><a class="js-scrollTo" href="#parallax-two">Photo</a></li>
+                    <li><a class="js-scrollTo" href="#parallax-three">Dessin</a></li>
+                    <li><a class="js-scrollTo" href="#parallax-four">Infographie 3D</a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://twitter.com/MComoy"><i class="fa fa-twitter fa-lg"></i></a></li>   
@@ -63,13 +81,19 @@
             <h1>MATTHIEU COMOY</h1>
             <p>Étudiant en Web & Graphisme</p>    
        </header>
+        <img src="images/blending1.png" id="blendone">
     </div>
 </section>
 
-<section>
-  <div class="block">
+<section class="contenu">
+    
+  <div class="block" id="deb">
+
    <img src="images/4nrCLdlb_400x400.jpg" id="prof"> 
-    <p><span class="first-character sc">Hey!</span> Je suis un jeune étudiant dans le domaine du graphisme et du développement web. J'ai  toujours été passionné par le dessin et ce n'est pas prét de s'arrêter! J'ai découvert le monde du webdesign il y'a un an et j'ai décidé d'en faire mon métier. J'aime créer des sites web au design épuré qui mélangent mes médias préférés. Je vous invite à explorer ce portfolio pour découvrir une sélection de mes créations. Bonne visite!</p>
+    <p><span class="first-character sc">Hey!</span> Je suis un jeune étudiant dans le domaine du graphisme et du développement web. J'ai  toujours été passionné par le dessin et ce n'est pas prét de s'arrêter! J'ai découvert le monde du webdesign il y'a un an et j'ai décidé d'en faire mon métier. J'aime créer des sites web au design épuré qui mélangent mes médias préférés. Je vous invite à explorer ce portfolio pour découvrir une sélection de mes créations. <b>Bonne visite !</b></p>
+    
+    <a class="js-scrollTo"  href="#parallax-two"><i id="scrollone" class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
+      
   </div>
 </section>
 
@@ -79,7 +103,7 @@
   </div>
 </section>
 
-<section>
+<section class="contenu">
   <div class="block">
       <div class="container gal-container" id="photo">
           <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
@@ -220,10 +244,10 @@
           </div>
           <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
             <div class="box">
-              <a href="#" data-toggle="modal" data-target="#5">
+              <a href="#" data-toggle="modal" data-target="#12">
                 <img src="images/1min.jpg">
               </a>
-              <div class="modal fade" id="5" tabindex="-1" role="dialog">
+              <div class="modal fade" id="12" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -301,10 +325,10 @@
           </div>
           <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
             <div class="box">
-              <a href="#" data-toggle="modal" data-target="#10">
+              <a href="#" data-toggle="modal" data-target="#11">
                 <img src="images/18min.jpg">
               </a>
-              <div class="modal fade" id="10" tabindex="-1" role="dialog">
+              <div class="modal fade" id="11" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>

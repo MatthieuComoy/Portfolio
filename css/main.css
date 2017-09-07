@@ -3,7 +3,25 @@ body{
 }
 
 #nom{
-    color: coral;
+      background: -webkit-linear-gradient(left, red , yellow);
+   background: -o-linear-gradient(right, red, yellow);
+   background: -moz-linear-gradient(right, red, yellow);
+   background: linear-gradient(to right, red , yellow); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.nav{
+    text-align: center;
+}
+
+.nav navbar-nav navbar-right{
+     background: -webkit-linear-gradient(left, red , yellow);
+   background: -o-linear-gradient(right, red, yellow);
+   background: -moz-linear-gradient(right, red, yellow);
+   background: linear-gradient(to right, red , yellow); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
 }
 header h1{
     margin-top: 25px;
@@ -28,23 +46,36 @@ header h1{
     display: none;
 }
 
-#menu{
-    
-}
 #prof{
     display: block;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
+    width: 300;
+}
+
+#scrollone{
+    margin-left: 50%;
+     background: -webkit-linear-gradient(left, red , yellow);
+   background: -o-linear-gradient(right, red, yellow);
+   background: -moz-linear-gradient(right, red, yellow);
+   background: linear-gradient(to right, red , yellow); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        
 }
 
 header p{
-    color: coral;
     text-align: center;
     font-size: 2em;
-    color: coral;
     font-family: 'Raleway', sans-serif;
+    background: -webkit-linear-gradient(left, red , yellow);
+   background: -o-linear-gradient(right, red, yellow);
+   background: -moz-linear-gradient(right, red, yellow);
+   background: linear-gradient(to right, red , yellow); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .social{
     color: cadetblue;
@@ -88,19 +119,32 @@ header p{
 
 
 
+.contenu{
+    box-shadow: 0px 0px 89px 8px;
+    z-index: 999;
+}
 
+#blendone{
+    width: 100%;
+    opacity: 1;
+    
+}
 
-
-
-
+#deb{
+    padding-top: 0px !important;
+}
 
 @import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
-/* Override UGG site */
+
 #main {width: 100%; padding:0;}
 .content-asset p {margin:0 auto;}
 .breadcrumb {display:none;}
+
+.parallax{
+    background-color: rgba(0,0,0,0.5) ;
+}
 
 /* Helpers */
 /**************************/
@@ -108,12 +152,24 @@ header p{
 .margin-bot-10 {padding-bottom:10px;}
 
 /* Typography */
-#myparallax h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#myparallax h2 {font-family: 'Fjalla One', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;
+background: -webkit-linear-gradient(left, red , yellow);
+   background: -o-linear-gradient(right, red, yellow);
+   background: -moz-linear-gradient(right, red, yellow);
+   background: linear-gradient(to right, red , yellow); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+
 #myparallax h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
 .block p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:16px; line-height:24px;}
-.first-character {font-weight:400; float: left; font-size: 60px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+.first-character {font-weight:400; float: left; font-size: 60px; line-height: 67px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
 
-.sc {color: #3b8595;}
+.sc {background: -webkit-linear-gradient(left, red , yellow);
+   background: -o-linear-gradient(right, red, yellow);
+   background: -moz-linear-gradient(right, red, yellow);
+   background: linear-gradient(to right, red , yellow); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
 .ny {color: #3d3c3a;}
 .atw {color: #c48660;} 
 
@@ -130,7 +186,7 @@ header p{
 
 /* Section - Parallax */
 /**************************/
-#myparallax #parallax-one {padding-top: 50px; padding-bottom: 50px; overflow: hidden; position: relative; width: 100%; background-image: url("https://source.unsplash.com/w2fTKLN3CJU/1600x900"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#myparallax #parallax-one {padding-top: 50px; padding-bottom: 0px; overflow: hidden; position: relative; width: 100%; background-image: url("https://source.unsplash.com/w2fTKLN3CJU/1600x900"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
 #myparallax #parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://source.unsplash.com/1600x900/?camera"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
 #myparallax #parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://source.unsplash.com/1600x900/?drawing"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
 #myparallax #parallax-four {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://source.unsplash.com/1600x900/?computer"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
@@ -215,7 +271,7 @@ body{
     background-color: #000;
     opacity: 1;
     color: #fff;
-    z-index: 999;
+    z-index: 900;
     right: -12px;
     top: -12px;
     border-radius: 50%;
@@ -303,5 +359,117 @@ body{
     padding-left: 0px;
 }
 
+
+
+
+
+h1 {
+   text-align: center;
+   font-weight: 300;
+   color: #777
+}
+
+h1 span {
+   font-weight: 600;
+}
+
+.timeline-container {
+   width: 80%;
+   padding: 50px 0;
+   margin: 50px auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.timeline-container:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: #CCD1D9;
+   z-index: 1
+}
+
+.timeline-block {
+   width: -webkit-calc(50% + 8px);
+   width: -moz-calc(50% + 8px);
+   width: calc(50% + 8px);
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   clear: both;
+}
+
+.timeline-block-right {
+   float: right;
+}
+
+.timeline-block-left {
+   float: left;
+   direction: rtl
+}
+
+.marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   background: #4FC1E9;
+   margin-top: 10px;
+   z-index: 9999
+}
+
+.timeline-content {
+   width: 95%;
+   padding: 0 15px;
+   color: #666
+}
+
+.timeline-content h3 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 25px;
+   font-weight: 500
+}
+
+.timeline-content span {
+   font-size: 15px;
+   color: #a4a4a4;
+}
+
+.timeline-content p {
+   font-size: 14px;
+   line-height: 1.5em;
+   word-spacing: 1px;
+   color: #888;
+}
+
+
+@media screen and (max-width: 768px) {
+   .container:before {
+      left: 8px;
+      width: 2px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .timeline-block-right {
+      float: none;
+   }
+
+   .timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
+}
 
 
