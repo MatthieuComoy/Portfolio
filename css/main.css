@@ -124,6 +124,12 @@ header p{
     z-index: 999;
 }
 
+
+
+
+.full{
+    height: auto !important;
+}
 #blendone{
     width: 100%;
     opacity: 1;
@@ -263,6 +269,7 @@ body{
 }
 .modal-open .gal-item .modal-body{
 	padding: 0px;
+    height: auto;
 }
 .modal-open .gal-item button.close{
     position: absolute;
@@ -331,13 +338,14 @@ body{
 }
 @media (min-width: 768px) {
 .gal-container .modal-dialog {
-    width: 55%;
+    width: 70%;
     margin: 50 auto;
-}
+    }
 }
 @media (max-width: 768px) {
-    .gal-container .modal-content{
-        height:250px;
+.gal-container .modal-content{
+        height:auto;
+        width: 70%;
     }
 }
 
