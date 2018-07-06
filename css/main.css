@@ -81,9 +81,7 @@ header p{
     color: cadetblue;
 }
 
-.GT{
-    text-shadow: 0px 1px 30px rgba(0, 0, 0, 0.6);
-}
+
 
 
 .topnav {
@@ -236,6 +234,7 @@ body{
 	object-fit:cover;
 	-o-object-fit:cover;
 }
+
 .gal-item a:focus{
 	outline: none;
 }
