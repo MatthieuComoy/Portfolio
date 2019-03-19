@@ -1,445 +1,449 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        
-        <title>Matthieu Comoy | Portfolio</title>
-        <meta name="description" content="Salut! Je suis un jeune infographiste et développeur web encore en formation se passionnant pour tout ce qui touche au web et au graphisme. Venez en apprendre plus sur moi!">
-        
-        <link rel="icon" type="image/png" href="images/favicon.png" />
-        <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/npm.js"></script>
-        
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/myscript.js"></script>
-        <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<html lang="fr">
 
-              ga('create', 'UA-99085296-1', 'auto');
-              ga('send', 'pageview');
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        </script>
-        
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-        
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        
-        <script>
-	       $(document).ready(function() {
-		      $('.js-scrollTo').on('click', function() { // Au clic sur un élément
-			     var page = $(this).attr('href'); // Page cible
-			     var speed = 750; // Durée de l'animation (en ms)
-			     $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-			     return false;
-		      });
-	       });
-        </script>
-        
-    </head>
-    <body>
-     
-      <nav class="navbar navbar-default navbar-fixed-top" id="menu">
-          <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <title>Matthieu Comoy | Portfolio</title>
+    <meta name="description" content="Salut! Je suis un jeune infographiste et développeur web encore en formation se passionnant pour tout ce qui touche au web et au graphisme. Venez en apprendre plus sur moi!">
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/npm.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/myscript.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-99085296-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate({
+                    scrollTop: $(page).offset().top
+                }, speed); // Go
+                return false;
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#" id="nom">Matthieu comoy</a>
-              </div>
+                </button>
+                <a class="navbar-brand" href="#" id="nom">Matthieu comoy</a>
+            </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
                     <li><a class="js-scrollTo" href="#parallax-two">Photographie</a></li>
                     <li><a class="js-scrollTo" href="#parallax-three">Dessin & Croquis</a></li>
                     <li><a class="js-scrollTo" href="#parallax-four">Infographie 3D</a></li>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://twitter.com/MComoy"><i class="fa fa-twitter fa-lg"></i></a></li>   
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://twitter.com/MComoy"><i class="fa fa-twitter fa-lg" id="twitter"></i></a></li>
                     <li><a href="https://unsplash.com/@hitsujisama"><i class="fa fa-camera fa-lg"></i></a></li>
-                    <li><a href="https://www.instagram.com/m_comoy/"><i class="fa fa-instagram fa-lg"></i></a></li>   
-                  </ul>
-                </div>
-          </div>
-      </nav>
-      
-      <div id="myparallax">
-<section>
-    <div id="parallax-one" class="parallax">
-       <header>
-            <h1>MATTHIEU COMOY</h1>
-            <p>Étudiant en Web & Graphisme</p>    
-       </header>
-        <img src="images/blending1.png" id="blendone">
-    </div>
-</section>
-
-<section class="contenu">
-    
-  <div class="block" id="deb">
-
-   <img src="images/4nrCLdlb_400x400.jpg" id="prof"> 
-    <p><span class="first-character sc">Hey!</span> Je suis un jeune étudiant dans le domaine du graphisme et du développement web. J'ai  toujours été passionné par le dessin et ce n'est pas près de s'arrêter ! J'ai découvert le monde du webdesign il y'a un an et j'ai décidé d'en faire mon métier. J'aime créer des sites web au design épuré qui mélangent mes médias préférés et je vous invite à explorer ce portfolio que j'ai programmé pour découvrir une sélection de mes créations. <b>Bonne visite !</b></p>
-    
-    <a class="js-scrollTo"  href="#parallax-two"><i id="scrollone" class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
-      
-  </div>
-</section>
-
-<section>
-  <div id="parallax-two" class="parallax">
-    <h2 class="GT">PHOTOGRAPHIE</h2>
-  </div>
-</section>
-
-<section class="contenu">
-  <div class="block">
-      <div class="container gal-container" id="photo">
-          <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#1">
-                <img src="images/8.jpg" alt="image3">
-              </a>
-              <div class="modal fade bs-modal-lg" id="1" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/8.jpg" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    <li><a href="https://www.instagram.com/m_comoy/"><i class="fa fa-instagram fa-lg"></i></a></li>
+                </ul>
             </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#2">
-                <img src="images/6min.jpg" class="img-responsive">
-              </a>
-              <div class="modal fade" id="2" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/6.jpg" alt="image2" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#3">
-                <img src="images/7min.jpg">
-              </a>
-              <div class="modal fade" id="3" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/7.jpg" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#4">
-                <img src="images/9min.jpg">
-              </a>
-              <div class="modal fade" id="4" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/9.jpg" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#22">
-                <img src="images/22min.jpg">
-              </a>
-              <div class="modal fade" id="22" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/22.jpg" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#23">
-                <img src="images/21min.jpg">
-              </a>
-              <div class="modal fade" id="23" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/21.jpg" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-      </div>
-      
-    </div>
-</section>
-
-<section>
-  <div id="parallax-three" class="parallax">
-    <h2 class="GT">DESSIN</h2>
-  </div>
-</section>
-
-<section class="contenu">
-  <div class="block">
-      <div class="container gal-container" id="dessin">
-          <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#5">
-                <img src="images/2min.jpg">
-              </a>
-              <div class="modal fade" id="5" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/2.jpg" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#6">
-                <img src="images/11min.jpg">
-              </a>
-              <div class="modal fade" id="6" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/11.jpg" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#7">
-                <img src="images/14min.jpg">
-              </a>
-              <div class="modal fade" id="7" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/14.jpg" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#12">
-                <img src="images/1min.jpg">
-              </a>
-              <div class="modal fade" id="12" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/1.jpg" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-  </div>
-</section>
-          
-<section>
-  <div id="parallax-four" class="parallax">
-    <h2 class="GT">INFOGRAPHIE 3D</h2>
-  </div>
-</section>
+    </nav>
 
-<section class="contenu">
-    <div class="block">
-         <div class="container gal-container" id="blender">
-          <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#8">
-                <img src="images/15min.jpg">
-              </a>
-              <div class="modal fade" id="8" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/15.jpg" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <div id="myparallax">
+        <section>
+            <div id="parallax-one" class="parallax">
+                <header>
+                    <h1>MATTHIEU COMOY</h1>
+                    <p>Étudiant en Web & Graphisme</p>
+                </header>
+                <img src="images/blending1.png" id="blendone">
             </div>
-          </div>
-          <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#9">
-                <img src="images/16min.jpg">
-              </a>
-              <div class="modal fade" id="9" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/16.png" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </section>
+
+        <section class="contenu">
+
+            <div class="block" id="deb">
+
+                <img src="images/4nrCLdlb_400x400.jpg" id="prof">
+                <p><span class="first-character sc">Hey!</span> Je suis un jeune étudiant dans le domaine du graphisme et du développement web. J'ai toujours été passionné par le dessin et ce n'est pas près de s'arrêter ! J'ai découvert le monde du webdesign il y'a un an et j'ai décidé d'en faire mon métier. J'aime créer des sites web au design épuré qui mélangent mes médias préférés et je vous invite à explorer ce portfolio que j'ai programmé pour découvrir une sélection de mes créations. <b>Bonne visite !</b></p>
+
+                <a class="js-scrollTo" href="#parallax-two"><i id="scrollone" class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
+
             </div>
-          </div>
-          <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#10">
-                <img src="images/17min.jpg">
-              </a>
-              <div class="modal fade" id="10" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/17.jpg" class="full">
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </section>
+
+        <section>
+            <div id="parallax-two" class="parallax">
+                <h2 class="GT">PHOTOGRAPHIE</h2>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#11">
-                <img src="images/18min.jpg">
-              </a>
-              <div class="modal fade" id="11" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/18.jpg" class="full">
+        </section>
+
+        <section class="contenu">
+            <div class="block">
+                <div class="container gal-container" id="photo">
+                    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#1">
+                                <img src="images/min/8min.jpg" alt="image3">
+                            </a>
+                            <div class="modal fade bs-modal-lg" id="1" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/8.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>  
-             </div>
-            <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#20">
-                <img src="images/20min.jpg">
-              </a>
-              <div class="modal fade" id="20" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/20.jpg" class="full">
+
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#2">
+                                <img src="images/min/6min.jpg" class="img-responsive">
+                            </a>
+                            <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/6.jpg" alt="image2" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-            <div class="box">
-              <a href="#" data-toggle="modal" data-target="#21">
-                <img src="images/19min.jpg">
-              </a>
-              <div class="modal fade" id="21" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                      <img src="images/19.jpg" class="full">
+
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#3">
+                                <img src="images/min/7min.jpg">
+                            </a>
+                            <div class="modal fade" id="3" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/7.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
+                    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#4">
+                                <img src="images/min/9min.jpg">
+                            </a>
+                            <div class="modal fade" id="4" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/9.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#22">
+                                <img src="images/min/22min.jpg">
+                            </a>
+                            <div class="modal fade" id="22" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/22.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#23">
+                                <img src="images/min/21min.jpg">
+                            </a>
+                            <div class="modal fade" id="23" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/21.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
+
             </div>
-          </div>
+        </section>
+
+        <section>
+            <div id="parallax-three" class="parallax">
+                <h2 class="GT">DESSIN</h2>
             </div>
-          </div>
-</section>
-  
-</div>
-     
-     <script type="text/javascript">
-            (function($) {          
-                $(document).ready(function(){                    
-                    $(window).scroll(function(){                          
-                        if ($(this).scrollTop() > 200) {
-                            $('#menu').fadeIn(500);
-                        } else {
-                            $('#menu').fadeOut(500);
-                        }
-                    });
+        </section>
+
+        <section class="contenu">
+            <div class="block">
+                <div class="container gal-container" id="dessin">
+                    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#5">
+                                <img src="images/min/2min.jpg">
+                            </a>
+                            <div class="modal fade" id="5" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/2.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#6">
+                                <img src="images/min/11min.jpg">
+                            </a>
+                            <div class="modal fade" id="6" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/11.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#7">
+                                <img src="images/min/14min.jpg">
+                            </a>
+                            <div class="modal fade" id="7" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/14.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#12">
+                                <img src="images/min/1min.jpg">
+                            </a>
+                            <div class="modal fade" id="12" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/1.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="parallax-four" class="parallax">
+                <h2 class="GT">INFOGRAPHIE 3D</h2>
+            </div>
+        </section>
+
+        <section class="contenu">
+            <div class="block">
+                <div class="container gal-container" id="blender">
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#8">
+                                <img src="images/min/15min.jpg">
+                            </a>
+                            <div class="modal fade" id="8" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/15.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#9">
+                                <img src="images/min/16min.jpg">
+                            </a>
+                            <div class="modal fade" id="9" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/16.png" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#10">
+                                <img src="images/min/17min.jpg">
+                            </a>
+                            <div class="modal fade" id="10" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/17.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#11">
+                                <img src="images/min/18min.jpg">
+                            </a>
+                            <div class="modal fade" id="11" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/18.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#20">
+                                <img src="images/min/20min.jpg">
+                            </a>
+                            <div class="modal fade" id="20" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/20.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#21">
+                                <img src="images/min/19min.jpg">
+                            </a>
+                            <div class="modal fade" id="21" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="images/19.jpg" class="full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script type="text/javascript">
+        (function($) {
+            $(document).ready(function() {
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 200) {
+                        $('#menu').fadeIn(500);
+                    } else {
+                        $('#menu').fadeOut(500);
+                    }
                 });
-            })(jQuery);
+            });
+        })(jQuery);
+
     </script>
-      
-    </body>
+    <footer>
+        <p>© 2019 Matthieu Comoy | All rights reserved</p>
+    </footer>
+</body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
