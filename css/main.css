@@ -1,52 +1,61 @@
-body{
-    overflow-x:hidden; overflow-y:auto;
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-#nom{
-      background: -webkit-linear-gradient(left, red , yellow);
+#nom {
+    /*
+   background: -webkit-linear-gradient(left, red , yellow);
    background: -o-linear-gradient(right, red, yellow);
    background: -moz-linear-gradient(right, red, yellow);
    background: linear-gradient(to right, red , yellow); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
+*/
+    color: #F58426;
 }
 
-.nav{
+.nav {
     text-align: center;
 }
 
-.nav navbar-nav navbar-right{
+.nav navbar-nav navbar-right {
+    /*
      background: -webkit-linear-gradient(left, red , yellow);
    background: -o-linear-gradient(right, red, yellow);
    background: -moz-linear-gradient(right, red, yellow);
    background: linear-gradient(to right, red , yellow); 
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;  
+  -webkit-text-fill-color: transparent; 
+*/
+    color: #F58426;
 }
-header h1{
+
+header h1 {
     margin-top: 25px;
     color: white;
     text-align: center;
     font-size: 4em;
-    text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-     font-family: 'Raleway', sans-serif;
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+    font-family: 'Raleway', sans-serif;
 }
-#menu{
+
+#menu {
     display: none;
 }
 
-#prof{
+#prof {
     display: block;
     border-radius: 50%;
     margin-left: auto;
@@ -55,29 +64,116 @@ header h1{
     width: 300;
 }
 
-#scrollone{
+#scrollone {
+    margin-top: 1em;
     margin-left: 50%;
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+    /*
      background: -webkit-linear-gradient(left, red , yellow);
    background: -o-linear-gradient(right, red, yellow);
    background: -moz-linear-gradient(right, red, yellow);
    background: linear-gradient(to right, red , yellow); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-        
+*/
+    color: #F58426;
 }
 
-header p{
+@-moz-keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+header p {
     text-align: center;
     font-size: 2em;
     font-family: 'Raleway', sans-serif;
+    /*
     background: -webkit-linear-gradient(left, red , yellow);
    background: -o-linear-gradient(right, red, yellow);
    background: -moz-linear-gradient(right, red, yellow);
    background: linear-gradient(to right, red , yellow); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+*/
+    color: #ffffff;
+    mix-blend-mode: lighten;
+    
+    width: 300px;
+    margin: auto;
+    padding: 10px;
 }
-.social{
+
+.social {
     color: cadetblue;
 }
 
@@ -113,142 +209,363 @@ header p{
 
 
 
-.contenu{
+.contenu {
     box-shadow: 0px 0px 89px 8px;
     z-index: 999;
 }
 
-
-
-
-.full{
+.full {
     height: auto !important;
 }
-#blendone{
+
+#blendone {
     width: 100%;
     opacity: 1;
-    
+
 }
 
-#deb{
+#deb {
     padding-top: 0px !important;
+    padding-bottom: 0.5em;
+     ! important;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
 
-#main {width: 100%; padding:0;}
-.content-asset p {margin:0 auto;}
-.breadcrumb {display:none;}
+#main {
+    width: 100%;
+    padding: 0;
+}
 
-.parallax{
-    background-color: rgba(0,0,0,0.5) ;
+.content-asset p {
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+.parallax {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Helpers */
 /**************************/
-.margin-top-10 {padding-top:10px;}
-.margin-bot-10 {padding-bottom:10px;}
+.margin-top-10 {
+    padding-top: 10px;
+}
+
+.margin-bot-10 {
+    padding-bottom: 10px;
+}
 
 /* Typography */
-#myparallax h2 {font-family: 'Fjalla One', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;
+#myparallax h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    /*
 background: -webkit-linear-gradient(left, red , yellow);
    background: -o-linear-gradient(right, red, yellow);
    background: -moz-linear-gradient(right, red, yellow);
    background: linear-gradient(to right, red , yellow); 
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;}
+  -webkit-text-fill-color: transparent;
+*/
+    box-sizing: border-box;
+    padding: 1em;
+    width: 60%
+    height: 3em;
+    color: #F58426;
+    text-align: center;
+    background: #fff;
+    color: #F58426;
+    mix-blend-mode: lighten;
+    margin-bottom: 0px !important;
+    
+}
 
-#myparallax h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
-.block p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:16px; line-height:24px;}
-.first-character {font-weight:400; float: left; font-size: 60px; line-height: 67px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+#myparallax h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: black;
+}
 
-.sc {background: -webkit-linear-gradient(left, red , yellow);
+.block p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.first-character {
+    font-weight: 400;
+    float: left;
+    font-size: 60px;
+    line-height: 67px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sc {
+    /*
+    background: -webkit-linear-gradient(left, red , yellow);
    background: -o-linear-gradient(right, red, yellow);
    background: -moz-linear-gradient(right, red, yellow);
    background: linear-gradient(to right, red , yellow); 
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;}
-.ny {color: #3d3c3a;}
-.atw {color: #c48660;} 
+  -webkit-text-fill-color: transparent;
+*/
+    color: #F58426;
+}
+
+.ny {
+    color: #3d3c3a;
+}
+
+.atw {
+    color: #c48660;
+}
 
 /* Section - Title */
 /**************************/
-#myparallax .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
-#myparallax .title h1 {font-size:35px; letter-spacing:8px;}
+#myparallax .title {
+    background: white;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#myparallax .title h1 {
+    font-size: 35px;
+    letter-spacing: 8px;
+}
 
 /* Section - Block */
 /**************************/
-#myparallax .block {background: white; padding-bottom: 60px; padding-top: 60px; width:820px; margin:0 auto; text-align:justify;}
-#myparallax .block-gray {background: #f2f2f2;padding: 60px;}
-#myparallax .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+#myparallax .block {
+    background: white;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    width: 820px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#myparallax .block-gray {
+    background: #f2f2f2;
+    padding: 60px;
+}
+
+#myparallax .section-overlay-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.70;
+}
 
 /* Section - Parallax */
 /**************************/
-#myparallax #parallax-one {padding-top: 50px; padding-bottom: 0px; overflow: hidden; position: relative; width: 100%; background-image: url("https://source.unsplash.com/w2fTKLN3CJU/1600x900"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
-#myparallax #parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://source.unsplash.com/1600x900/?camera"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
-#myparallax #parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://source.unsplash.com/1600x900/?drawing"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
-#myparallax #parallax-four {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url("https://source.unsplash.com/1600x900/?computer"); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#myparallax #parallax-one {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /*background-image: url("https://source.unsplash.com/w2fTKLN3CJU/1600x900"); */
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+    
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#myparallax #parallax-two {
+    padding-top: 400px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url("https://source.unsplash.com/1600x900/?camera");
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#myparallax #parallax-three {
+    padding-top: 400px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url("https://source.unsplash.com/1600x900/?drawing");
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#myparallax #parallax-four {
+    padding-top: 400px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url("https://source.unsplash.com/1600x900/?computer");
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
 
 /* Extras */
 /**************************/
-#myparallax .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+#myparallax .line-break {
+    border-bottom: 1px solid black;
+    width: 150px;
+    margin: 0 auto;
+}
 
 /* Media Queries */
 /**************************/
 @media screen and (max-width: 959px) and (min-width: 768px) {
-  #myparallax .block {padding: 40px; width:620px;}
+    #myparallax .block {
+        padding: 40px;
+        width: 620px;
+    }
 }
+
 @media screen and (max-width: 767px) {
-  #myparallax .block {padding: 30px; width:420px;}
-  #myparallax h2 {font-size:30px;}
-  #myparallax .block {padding: 30px;}
-  #myparallax .parallax-one, #myparallax .parallax-two, #myparallax .parallax-three {padding-top:100px; padding-bottom:100px;}
+    #myparallax .block {
+        padding: 30px;
+        width: 420px;
+    }
+
+    #myparallax h2 {
+        font-size: 30px;
+    }
+
+    #myparallax .block {
+        padding: 30px;
+    }
+
+    #myparallax .parallax-one,
+    #myparallax .parallax-two,
+    #myparallax .parallax-three {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
+
 @media screen and (max-width: 479px) {
-  #myparallax .block {padding: 30px 15px; width:290px;}
+    #myparallax .block {
+        padding: 30px 15px;
+        width: 290px;
+    }
 }
 
 /*******************************/
 /*GALLERIE PHOTO*/
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-body{
+
+body {
     font-family: 'Quicksand', sans-serif;
 }
-.gal-container{
-	padding: 12px;
-}
-.gal-item{
-	overflow: hidden;
-	padding: 3px;
-}
-.gal-item .box{
-	height: 267.33px;
-	overflow: hidden;
-}
-.box img{
-	height: 100%;
-	width: 100%;
-	object-fit:cover;
-	-o-object-fit:cover;
+
+.gal-container {
+    padding: 12px;
 }
 
-.gal-item a:focus{
-	outline: none;
+.gal-item {
+    overflow: hidden;
+    padding: 3px;
 }
-.gal-item a:after{
-	content: <i class="fa fa-plus-square-o fa-lg"></i>;
-	font-family: 'Glyphicons Halflings';
-	opacity: 0;
-	background-color: rgba(0, 0, 0, 0.75);
-	position: absolute;
-	right: 3px;
-	left: 3px;
-	top: 3px;
-	bottom: 3px;
-	text-align: center;
+
+.gal-item .box {
+    height: 267.33px;
+    overflow: hidden;
+}
+
+.box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.gal-item a:focus {
+    outline: none;
+}
+
+.gal-item a:after {
+    content: <i class="fa fa-plus-square-o fa-lg"></i>;
+    font-family: 'Glyphicons Halflings';
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    right: 3px;
+    left: 3px;
+    top: 3px;
+    bottom: 3px;
+    text-align: center;
     line-height: 350px;
     font-size: 30px;
     color: #fff;
@@ -256,23 +573,27 @@ body{
     -moz-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
 }
-.gal-item a:hover:after{
-	opacity: 1;
+
+.gal-item a:hover:after {
+    opacity: 1;
 }
-.modal-open .gal-container .modal{
-	background-color: rgba(0,0,0,0.4);
+
+.modal-open .gal-container .modal {
+    background-color: rgba(0, 0, 0, 0.4);
 }
-.modal-open .gal-item .modal-body{
-	padding: 0px;
+
+.modal-open .gal-item .modal-body {
+    padding: 0px;
     height: auto;
 }
-.modal-open .gal-item button.close{
+
+.modal-open .gal-item button.close {
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: #000;
+    background-color: #fff;
     opacity: 1;
-    color: #fff;
+    color: #000;
     z-index: 900;
     right: -12px;
     top: -12px;
@@ -280,36 +601,42 @@ body{
     font-size: 15px;
     border: 2px solid #fff;
     line-height: 25px;
-    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
-	box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.35);
 }
-.modal-open .gal-item button.close:focus{
-	outline: none;
+
+.modal-open .gal-item button.close:focus {
+    outline: none;
 }
-.modal-open .gal-item button.close span{
-	position: relative;
-	top: -3px;
-	font-weight: lighter;
-	text-shadow:none;
+
+.modal-open .gal-item button.close span {
+    position: relative;
+    top: -3px;
+    font-weight: lighter;
+    text-shadow: none;
 }
-.gal-container .modal-dialogue{
-	width: 80%;
+
+.gal-container .modal-dialogue {
+    width: 80%;
 }
-.gal-container .description{
-	position: relative;
-	height: 40px;
-	top: -40px;
-	padding: 10px 25px;
-	background-color: rgba(0,0,0,0.5);
-	color: #fff;
-	text-align: left;
+
+.gal-container .description {
+    position: relative;
+    height: 40px;
+    top: -40px;
+    padding: 10px 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: left;
 }
-.gal-container .description h4{
-	margin:0px;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 20px;
+
+.gal-container .description h4 {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
 }
+
 .gal-container .modal.fade .modal-dialog {
     -webkit-transform: scale(0.1);
     -moz-transform: scale(0.1);
@@ -331,163 +658,178 @@ body{
     transform: translate3d(0, -100px, 0);
     opacity: 1;
 }
+
 @media (min-width: 768px) {
-.gal-container .modal-dialog {
-    width: 70%;
-    margin: 50 auto;
+    .gal-container .modal-dialog {
+        width: 70%;
+        margin: 50 auto;
     }
 }
+
 @media (max-width: 768px) {
-.gal-container .modal-content{
-        height:auto;
+    .gal-container .modal-content {
+        height: auto;
         width: 70%;
     }
 }
 
-#photo{
+#photo {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
 }
 
-#dessin{
+#dessin {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
 }
 
-#blender{
+#blender {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
 }
-
-
-
 
 
 h1 {
-   text-align: center;
-   font-weight: 300;
-   color: #777
+    text-align: center;
+    font-weight: 300;
+    color: #777
 }
 
 h1 span {
-   font-weight: 600;
+    font-weight: 600;
 }
 
 .timeline-container {
-   width: 80%;
-   padding: 50px 0;
-   margin: 50px auto;
-   position: relative;
-   overflow: hidden;
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .timeline-container:before {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 50%;
-   margin-left: -1px;
-   width: 2px;
-   height: 100%;
-   background: #CCD1D9;
-   z-index: 1
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    z-index: 1
 }
 
 .timeline-block {
-   width: -webkit-calc(50% + 8px);
-   width: -moz-calc(50% + 8px);
-   width: calc(50% + 8px);
-   display: -webkit-box;
-   display: -webkit-flex;
-   display: -moz-box;
-   display: flex;
-   -webkit-box-pack: justify;
-   -webkit-justify-content: space-between;
-   -moz-box-pack: justify;
-   justify-content: space-between;
-   clear: both;
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
 }
 
 .timeline-block-right {
-   float: right;
+    float: right;
 }
 
 .timeline-block-left {
-   float: left;
-   direction: rtl
+    float: left;
+    direction: rtl
 }
 
 .marker {
-   width: 16px;
-   height: 16px;
-   border-radius: 50%;
-   border: 2px solid #F5F7FA;
-   background: #4FC1E9;
-   margin-top: 10px;
-   z-index: 9999
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: #4FC1E9;
+    margin-top: 10px;
+    z-index: 9999
 }
 
 .timeline-content {
-   width: 95%;
-   padding: 0 15px;
-   color: #666
+    width: 95%;
+    padding: 0 15px;
+    color: #666
 }
 
 .timeline-content h3 {
-   margin-top: 5px;
-   margin-bottom: 5px;
-   font-size: 25px;
-   font-weight: 500
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500
 }
 
 .timeline-content span {
-   font-size: 15px;
-   color: #a4a4a4;
+    font-size: 15px;
+    color: #a4a4a4;
 }
 
 .timeline-content p {
-   font-size: 14px;
-   line-height: 1.5em;
-   word-spacing: 1px;
-   color: #888;
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: #888;
 }
 
 
 @media screen and (max-width: 768px) {
-   .container:before {
-      left: 8px;
-      width: 2px;
-   }
-   .timeline-block {
-      width: 100%;
-      margin-bottom: 30px;
-   }
-   .timeline-block-right {
-      float: none;
-   }
+    .container:before {
+        left: 8px;
+        width: 2px;
+    }
 
-   .timeline-block-left {
-      float: none;
-      direction: ltr;
-   }
+    .timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .timeline-block-right {
+        float: none;
+    }
+
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+    }
 }
 
-*::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
 }
 
-*::-webkit-scrollbar
-{
-	width: 6px;
-	background-color: #F5F5F5;
+*::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
 }
 
-*::-webkit-scrollbar-thumb
-{
-	background-color: #000000;
+*::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+
+///////////
+
+footer{
+    z-index: 1000;
+    height: 200px;
+    
+}
+
+footer p{
+    text-align: center;
+    color: #d6d6d6;
+    padding: 1em;
+    background-color: #535353;
+    margin-bottom: 0px;
 }
