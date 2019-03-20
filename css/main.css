@@ -55,7 +55,7 @@ header h1 {
         0 10px 10px rgba(0, 0, 0, .2),
         0 20px 20px rgba(0, 0, 0, .15);
     font-family: 'Raleway', sans-serif;
-    mix-blend-mode:luminosity;
+    mix-blend-mode:hard-light;
 }
 
 #menu {
@@ -63,16 +63,20 @@ header h1 {
 }
 
 #prof {
-    display: block;
+    position: relative;
+    display: float;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5em;
     width: 300;
+    bottom: 230;
+    left: 32%;
+    border: solid 5px white;
 }
 
 #scrollone {
-    margin-top: 3%;
+    margin-top: 1%;
     margin-left: 50%;
     -moz-animation: bounce 3s infinite;
     -webkit-animation: bounce 3s infinite;
@@ -177,6 +181,7 @@ header p {
     width: 280px;
     margin: auto;
     padding: 10px;
+    margin-bottom: 5em;
 }
 
 .social {
@@ -234,6 +239,12 @@ header p {
     padding-top: 0px !important;
     padding-bottom: 0.5em;
      ! important;
+    height: 49%; 
+}
+
+#textdeb{
+    position: relative;
+    bottom: 240;
     
 }
 
